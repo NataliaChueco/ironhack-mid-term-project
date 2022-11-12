@@ -1,0 +1,17 @@
+.header{
+    justify-content: space-between;
+    align-items: center;
+    width:max-width;
+}
+.menu__opt li{
+    margin: 0px 18px;
+}
+
+
+@media screen and (max-width: $small) {
+    //do Smth
+}
+    
+@media screen and (min-width: $medium) {
+    //do Smth
+}
