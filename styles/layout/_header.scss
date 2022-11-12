@@ -7,11 +7,26 @@
     margin: 0px 18px;
 }
 
-
-@media screen and (max-width: $small) {
-    //do Smth
+.header__hamburguer{
+    display:none;
 }
+
+@media screen and (min-width: $breakpoint-sm) {
+    .header__menu{
+        display:none;
+    }
+    .header__hamburguer{
+        display:inline;
+    }
     
-@media screen and (min-width: $medium) {
-    //do Smth
+}
+
+@media screen and (min-width: 535px) {
+    .header__menu{
+        display:inline;
+    }
+    .header >span{
+        display:none;
+    }
+    
 }
