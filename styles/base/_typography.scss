@@ -1,12 +1,7 @@
 /**;
  * Basic typography style for copy text;
  */
-body{
-    color: $text-color;
-    font-family: $text-font-stack;
-    font-style: normal;
-    font-size: 20px;
-}
+
 // Headings ;
 h1{
     font-weight: 700;
@@ -38,18 +33,20 @@ h4{
 
 //Text main styles
 
-.body-intro_medium{
+
+.body_intro_medium{
     font-weight: 500 ;
     font-size: 24px ;
     line-height: 28px ;
 }
     
-    
-.body-intro_regular{
+
+.body_intro_regular{
     font-weight: 400 ;
     font-size: 20px ;
     line-height: 150% ;
 }
+
 
 
 .headline_regular{
@@ -62,7 +59,8 @@ h4{
     font-size: 17px ;
     line-height: 130% ;
 }
-    
+
+
 .caption{
     font-weight: 400 ;
     font-size: 15px ;

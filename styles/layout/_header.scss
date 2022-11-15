@@ -1,32 +1,143 @@
 .header{
-    justify-content: space-between;
+    display:flex;
+    padding: 4% 10%;
+    width: 100%;
+    justify-content: space-around;
+
+    &__left{
+        flex-direction: column;
+        width: 50%;
+        padding: 80px 0px;
+        margin-right: 40px;
+
+        & article{
+            max-width: 550px;
+
+            & h1{
+                min-width: 430px;
+                height: 210px;
+            }
+        }
+       
+    }
+
+    &__right{
+        position: relative;
+        width: 50%;
+        max-width: 570px;
+        height: 650px;
+        background-image: url(/ironhack-mid-term-project/assets/hero-section/hero-image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        
+        & img:nth-child(1){
+            position: absolute;
+            width: 343px;
+            height: auto;
+            left: -83px;
+            top: 3px;
+        }
+
+        & img:nth-child(2){
+            position: absolute;
+            width: 343px;
+            height: auto;
+            left: 274px;
+            top: 450px;
+        }
+    }
+    
+
+}
+
+.left--text{
+    color: $light-text-color;
+    min-width: 435px;
+    height: 90px;
+}
+
+
+.buttons--touch, .buttons--work{
+    margin: 40px 10px 0px 0px;
+}
+
+.buttons--work button{
+    background-color: $white;
+   
+    & a{
+        color: $light-text-color;
+        
+    }
+}
+
+
+@media screen and (max-width: 505px) {
+    .header__left article h1{
+
+        font-size: 20px;
+        line-height: 40px;
+
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+
+        &__left{
+            padding:0;
+            margin:0;
+            width:100%;
+
+            & article h1{
+                min-width: 70px;
+                height: auto;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        &__right{
+            display:none;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 1195px) {
+    h1{
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 1300px) {
+    .header__right img{
+        display: none;
+    }
+    
+}
+
+/* COMPANIES LOGO SECTION */
+
+.companies{
+    height: 96px;
+    width: 100%;
+    padding: 4% 10%;
+    display: flex;
     align-items: center;
-    width:max-width;
-}
-.menu__opt li{
-    margin: 0px 18px;
-}
+    flex-direction: row;
+    justify-content: space-around;
+    filter: grayscale(100%);
 
-.header__hamburguer{
-    display:none;
-}
-
-@media screen and (min-width: $breakpoint-sm) {
-    .header__menu{
-        display:none;
+    & img{
+        width: 11%;
+        max-width: 130px;
+        height: auto;
     }
-    .header__hamburguer{
-        display:inline;
-    }
-    
-}
-
-@media screen and (min-width: 535px) {
-    .header__menu{
-        display:inline;
-    }
-    .header >span{
-        display:none;
-    }
-    
 }
