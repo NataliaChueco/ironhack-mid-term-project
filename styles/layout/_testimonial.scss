@@ -1,0 +1,44 @@
+.clients__container{
+    background-color: $text-color;
+    width: 1320px;
+    padding: 0% 5%;
+
+   
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+
+
+    &__left{
+        flex-direction: column;
+    }
+
+    &__mid{
+        flex-direction: column;
+
+        & h3{
+            color:$white;
+        }
+
+        & >p{
+            color: $highlight-color;
+        }
+    }
+    
+    &__right{
+        flex-direction: column;
+    }
+}
+
+.profile{
+
+    & p{
+        color: $white;
+    }
+}
+.memoji{
+    width: 150px;
+    height:auto;
+}

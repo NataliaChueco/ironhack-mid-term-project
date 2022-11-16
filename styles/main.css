@@ -320,6 +320,41 @@ h4 {
     justify-content: center;
   }
 }
+.clients__container {
+  background-color: #292E47;
+  width: 1320px;
+  padding: 0% 5%;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+.clients__left {
+  flex-direction: column;
+}
+.clients__mid {
+  flex-direction: column;
+}
+.clients__mid h3 {
+  color: #FFFFFF;
+}
+.clients__mid > p {
+  color: #FFC600;
+}
+.clients__right {
+  flex-direction: column;
+}
+
+.profile p {
+  color: #FFFFFF;
+}
+
+.memoji {
+  width: 150px;
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
 }
