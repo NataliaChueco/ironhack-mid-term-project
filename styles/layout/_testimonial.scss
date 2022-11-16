@@ -1,7 +1,13 @@
 .clients__container{
     background-color: $text-color;
-    width: 1320px;
+    background-image: url(/ironhack-mid-term-project/assets/testimonial-section/orbit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
     padding: 0% 5%;
+    height: 622px;
+    justify-content: space-between;
 
    
 }
@@ -13,32 +19,57 @@
 
     &__left{
         flex-direction: column;
+        justify-content: space-between;
     }
 
     &__mid{
         flex-direction: column;
+        display: flex;
+        align-items: center;
 
         & h3{
             color:$white;
+            margin-top: 120px;
         }
 
         & >p{
             color: $highlight-color;
+            text-align: center;
+            margin-top: 50px;
         }
     }
     
     &__right{
         flex-direction: column;
+        justify-content: space-between;
     }
 }
 
 .profile{
+    margin-top: 90px;
 
-    & p{
-        color: $white;
+
+    &__cropper{
+        background-image: url(/ironhack-mid-term-project/assets/testimonial-section/profile.png);
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 70px;
+        height:70px;
+        
     }
+
+    &__text{
+        color: $white;
+
+        & p:first-child{
+            color:$clear-blue;
+        }
+    }    
 }
 .memoji{
     width: 150px;
     height:auto;
+    margin: 60px 15px;
 }
