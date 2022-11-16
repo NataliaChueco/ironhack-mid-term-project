@@ -277,6 +277,49 @@ h4 {
   height: auto;
 }
 
+.projects {
+  flex-direction: column;
+  padding: 4% 10%;
+}
+.projects__cards {
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.cards__card {
+  width: 340px;
+  height: 472px;
+  margin: 15px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.cards__card > img {
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.cards__card article {
+  padding: 10px 30px 40px;
+  color: #6B708D;
+}
+.cards__card article p:first-child {
+  margin-bottom: 0px;
+  color: #292E47;
+}
+.cards__card a {
+  padding: 0px 30px;
+  color: #072AC8;
+}
+
+@media screen and (max-width: 870px) {
+  .projects {
+    align-items: center;
+  }
+  .projects__cards {
+    justify-content: center;
+  }
+}
 * {
   box-sizing: border-box;
 }

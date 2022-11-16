@@ -1,0 +1,50 @@
+.projects{
+    flex-direction: column;
+    padding: 4% 10%;
+
+    &__cards{
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+
+    }
+}
+
+.cards__card{
+    width: 340px;
+    height: 472px;
+    margin: 15px 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    & >img{
+        height: 240px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    & article{
+        padding: 10px 30px 40px;
+        color: $light-text-color;
+        
+        
+        & p:first-child{
+            margin-bottom: 0px;
+            color:$text-color;
+        }
+    }
+
+    & a{
+        padding: 0px 30px;
+        color: $blue-main-color;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .projects{
+        align-items: center;
+    
+        &__cards{
+            justify-content: center;
+        }
+    }
+}
