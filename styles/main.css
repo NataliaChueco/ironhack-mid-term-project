@@ -10,6 +10,11 @@ a {
   text-decoration: none;
   color: #292E47;
 }
+a:hover {
+  text-decoration: underline;
+  color: #43D2FF;
+  cursor: pointer;
+}
 
 button {
   border: none;
@@ -415,6 +420,57 @@ h4 {
   }
   .clients__mid h3 {
     font-size: 30px;
+  }
+}
+.services {
+  flex-direction: column;
+  padding: 4% 10%;
+}
+.services__cards {
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.services__card {
+  width: 340px;
+  height: 472px;
+  margin: 15px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.services__card > img {
+  height: 65px;
+  width: 30%;
+  margin: 50px 20px 20px;
+}
+.services__card article {
+  padding: 10px 30px 40px;
+  color: #6B708D;
+}
+.services__card article p:first-child {
+  margin-bottom: 0px;
+  color: #292E47;
+  min-height: 50px;
+  min-width: 70px;
+}
+.services__card article :not(p:first-child) {
+  max-height: 70px;
+  min-width: 70px;
+}
+.services__card a {
+  padding: 0px 30px;
+  color: #072AC8;
+}
+
+@media screen and (max-width: 870px) {
+  .services {
+    align-items: center;
+  }
+  .services__services {
+    justify-content: center;
   }
 }
 * {
