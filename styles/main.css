@@ -284,7 +284,7 @@ h4 {
 
 .projects {
   flex-direction: column;
-  padding: 4% 10%;
+  padding: 15% 10%;
 }
 .projects__cards {
   flex-wrap: wrap;
@@ -424,7 +424,7 @@ h4 {
 }
 .services {
   flex-direction: column;
-  padding: 4% 10%;
+  padding: 15% 10%;
 }
 .services__cards {
   flex-wrap: wrap;
@@ -471,6 +471,141 @@ h4 {
   }
   .services__services {
     justify-content: center;
+  }
+}
+.questions {
+  background-color: #FFC600;
+  height: 500px;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 80px;
+  align-items: center;
+}
+.questions h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.questions p {
+  margin-top: 0;
+  text-align: center;
+}
+
+.inline {
+  margin: 30px;
+  width: 80%;
+}
+.inline button {
+  height: 80px;
+  width: 30%;
+}
+.inline button a {
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.input-icons {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.input-icons svg {
+  position: absolute;
+}
+.input-icons input[type=email] {
+  padding-left: 105px;
+  font-size: 17px;
+  font-family: "Roboto";
+}
+.input-icons input {
+  height: 80px;
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+.input-icons input::-moz-placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #292E47;
+  font-family: "Roboto";
+  font-size: 17px;
+  padding: 10px;
+}
+.input-icons input:-ms-input-placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #292E47;
+  font-family: "Roboto";
+  font-size: 17px;
+  padding: 10px;
+}
+.input-icons input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: #292E47;
+  font-family: "Roboto";
+  font-size: 17px;
+  padding: 10px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 40px;
+  margin-left: 45px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 705px) {
+  .questions h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .questions h3 {
+    font-size: 30px;
+  }
+  .input-icons svg {
+    display: none;
+  }
+  .input-icons input[type=email] {
+    padding-left: 30px;
+    font-size: 13px;
+    font-family: "Roboto";
+  }
+  .input-icons input::-moz-placeholder {
+    padding: 0;
+  }
+  .input-icons input:-ms-input-placeholder {
+    padding: 0;
+  }
+  .input-icons input::placeholder {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .inline {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+  .inline button {
+    height: 47px;
+    border-radius: 6%;
+  }
+  .inline button a {
+    font-size: 13px;
+  }
+  .questions h3 {
+    font-size: 20px;
   }
 }
 * {
