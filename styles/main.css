@@ -348,6 +348,7 @@ h4 {
 .clients__mid h3 {
   color: #FFFFFF;
   margin-top: 120px;
+  text-align: center;
 }
 .clients__mid > p {
   color: #FFC600;
@@ -360,7 +361,8 @@ h4 {
 }
 
 .profile {
-  margin-top: 90px;
+  margin-top: 20%;
+  align-items: center;
 }
 .profile__cropper {
   background-image: url(/ironhack-mid-term-project/assets/testimonial-section/profile.png);
@@ -370,12 +372,17 @@ h4 {
   background-repeat: no-repeat;
   width: 70px;
   height: 70px;
+  margin-right: 18px;
 }
 .profile__text {
   color: #FFFFFF;
 }
 .profile__text p:first-child {
   color: #A2D6F9;
+  margin-bottom: 0;
+}
+.profile__text :not(p:first-child) {
+  margin-top: 2px;
 }
 
 .memoji {
@@ -384,6 +391,32 @@ h4 {
   margin: 60px 15px;
 }
 
+@media screen and (max-width: 920px) {
+  .clients__left {
+    display: none;
+  }
+  .clients__right {
+    display: none;
+  }
+  .clients__container {
+    justify-content: center;
+    height: 580px;
+  }
+  .profile {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .clients__mid > p {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+  }
+  .clients__mid h3 {
+    font-size: 30px;
+  }
+}
 * {
   box-sizing: border-box;
 }
