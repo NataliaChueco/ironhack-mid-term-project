@@ -26,6 +26,7 @@ button{
     
     &:hover{
         background-color: $highlight-color;
+        color:$text-color;
     }
     & a{
         color: $white;
