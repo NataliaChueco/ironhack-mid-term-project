@@ -26,10 +26,10 @@
         width: 50%;
         max-width: 570px;
         height: 650px;
-        background-image: url(/ironhack-mid-term-project/assets/hero-section/hero-image.png);
+        background-image: url(/ironhack-mid-term-project/assets/hero-section/coach-image.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
 
         
         & img:nth-child(1){
@@ -37,15 +37,15 @@
             width: 343px;
             height: auto;
             left: -83px;
-            top: 3px;
+            top: -32px;
         }
 
         & img:nth-child(2){
             position: absolute;
             width: 343px;
             height: auto;
-            left: 274px;
-            top: 450px;
+            left: 324px;
+            top: 285px;
         }
     }
     
@@ -115,7 +115,12 @@
     }
     
 }
-
+@media screen and (max-width: 1260px) {
+    .header__right{
+        background-size: contain;
+    }
+    
+}
 @media screen and (max-width: 1300px) {
     .header__right img{
         display: none;

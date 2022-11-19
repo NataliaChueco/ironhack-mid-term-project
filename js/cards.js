@@ -14,7 +14,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon`).then(response =>{
     for (let i = 0; i < 3; i++) {
         let poketype = "";
         let pokeindex = "";
-        fetch(data.results[i].url).then(response =>{
+        fetch(data.results[i*3].url).then(response =>{
             if(!response.ok){
                 return "";
             }
@@ -34,19 +34,19 @@ fetch(`https://pokeapi.co/api/v2/pokemon`).then(response =>{
             }
         }).then(()=>{
 
-            let title = `Choose ${data.results[i].name}`;
-            let descr = "This little starter pokémon called "+ data.results[i].name +
-            "is type "+ poketype;
+            let title = `Choose ${data.results[i*3].name}`;
+            let descr = "This little starter pokémon called "+ data.results[i*3].name +
+            " is type "+ poketype;
             let img = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeindex}.png`;
             
-            let HTMLCard = document.getElementsByClassName(`projects__cards ${i}`);
-            HTMLCard.getElementsByClassName('cardImg').src = img;
+            document.getElementById(`${i}`).firstElementChild.src = img;
+            document.getElementById(`${i}`).firstElementChild.alt = `${data.results[i*3].name}` ;
 
-            let HTMLArticleFirst = document.getElementsByClassName(`card__text body_intro_medium`);
-            HTMLArticleFirst.innerHTML = title;
+            let HTMLTitle = document.getElementById(`title${i}`);
+            HTMLTitle.innerHTML = title;
 
-            let HTMLArticleSecond = document.getElementsByClassName(`card__text headline_regular`);
-            HTMLArticleSecond.innerHTML = descr;
+            let HTMLDescr = document.getElementById(`descr${i}`);
+            HTMLDescr.innerHTML = descr;
         })
     }
 })

@@ -39,6 +39,12 @@
     }
 }
 
+.card__text{
+    & p:first-child{
+        text-transform: capitalize;
+    }
+}
+
 @media screen and (max-width: 870px) {
     .projects{
         align-items: center;
