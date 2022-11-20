@@ -74,6 +74,10 @@
         <form action="">
             <label for="fname">Full Name *</label>
             <input type="text" id="fname" name="fullname" placeholder="Enter your full name" required>
+            <div id="alert" class="alert"  aria-hidden="true">
+                <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <strong>Error!</strong> This field needs to be informed.
+            </div>
             <div class="flexContainer flex">
                 <div class="flexContainer__field flex">
                     <label for="email">Email *</label>
@@ -88,7 +92,7 @@
             <label for="subject">Message</label>
             <textarea id="subject" name="subject" placeholder="Write your message here..." style="height:200px"></textarea>
         
-            <input type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit">
           </form>
     </section>
     <!-- FOOTER -->
@@ -113,7 +117,8 @@
         </div> 
     </footer>
 
-    <script src="/ironhack-mid-term-project/js/nav.js"></script>    
+    <script src="/ironhack-mid-term-project/js/nav.js"></script>
+    <script src="/ironhack-mid-term-project/js/contactus.js"></script>    
 
 </body>
 </html>

@@ -281,6 +281,37 @@ select, textarea {
     width: 100%;
   }
 }
+.alert {
+  display: none;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.alert.success {
+  background-color: #04AA6D;
+}
+
+.alert.visible {
+  display: block;
+}
+
 .column {
   padding: 15% 10% 5%;
   justify-content: space-between;
