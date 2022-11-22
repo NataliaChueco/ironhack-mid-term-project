@@ -306,10 +306,7 @@ select, textarea {
 
 .alert.success {
   background-color: #04AA6D;
-}
-
-.alert.visible {
-  display: block;
+  margin-top: 20px;
 }
 
 .column {

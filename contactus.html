@@ -74,25 +74,33 @@
         <form action="">
             <label for="fname">Full Name *</label>
             <input type="text" id="fname" name="fullname" placeholder="Enter your full name" required>
-            <div id="alert" class="alert"  aria-hidden="true">
-                <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                <strong>Error!</strong> This field needs to be informed.
-            </div>
             <div class="flexContainer flex">
                 <div class="flexContainer__field flex">
                     <label for="email">Email *</label>
                     <input type="text" id="email" name="emailaddress" placeholder="Enter your email address" required>
                 </div>
+                
                 <div class="flexContainer__field flex">
                     <label for="phone">Phone *</label>
                     <input type="text" id="phone" name="phonenumber" placeholder="Enter your phone number" required>
                 </div>
             </div>
+            <div id="errorEmail" class="alert"  aria-hidden="true" width="50%">
+                <span id="closeEmail" class="closebtn" onclick="closeAlert('closeEmail')">&times;</span> 
+                <strong>Error!</strong> This is not a valid email.
+            </div>
         
             <label for="subject">Message</label>
             <textarea id="subject" name="subject" placeholder="Write your message here..." style="height:200px"></textarea>
-        
+            <div id="alert" class="alert"  aria-hidden="true">
+                <span id="closeError" class="closebtn" onclick="closeAlert('closeError')">&times;</span> 
+                <strong>Error!</strong> There are missing required fields.
+            </div>
             <input id="submit" type="submit" value="Submit">
+            <div id="success" class="alert success"  aria-hidden="true">
+                <span id="closeSubmited" class="closebtn" onclick="closeAlert('closeSubmited')">&times;</span> 
+                <strong>Submited!</strong> Your information has been submited, thanks.
+            </div>
           </form>
     </section>
     <!-- FOOTER -->
