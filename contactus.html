@@ -85,9 +85,13 @@
                     <input type="text" id="phone" name="phonenumber" placeholder="Enter your phone number" required>
                 </div>
             </div>
-            <div id="errorEmail" class="alert"  aria-hidden="true" width="50%">
+            <div id="errorEmail" class="alert"  aria-hidden="true">
                 <span id="closeEmail" class="closebtn" onclick="closeAlert('closeEmail')">&times;</span> 
                 <strong>Error!</strong> This is not a valid email.
+            </div>
+            <div id="errorPhone" class="alert"  aria-hidden="true">
+                <span id="closePhone" class="closebtn" onclick="closeAlert('closePhone')">&times;</span> 
+                <strong>Error!</strong> This is not a valid phone number.
             </div>
         
             <label for="subject">Message</label>

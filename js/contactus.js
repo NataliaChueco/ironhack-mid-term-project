@@ -12,19 +12,24 @@ function notifyFields(e) {
   const emailField = document.getElementById("email");
   const phoneField = document.getElementById("phone");
 
-  if (!validateEmail(emailField)){
-    showErrorAlert("errorEmail");
-  }
-
+  let generalNotification = false;
   if (!fullNameField.value || !emailField.value || !phoneField.value ) {
     showErrorAlert("alert");
-    
+    generalNotification = true;
   }
+
   else{
     showErrorAlert("submit");
   }
 
-  const inputs = document.querySelectorAll('#fname, #email','#phone' );
+  if (!generalNotification && !validateEmail(emailField)){
+    showErrorAlert("errorEmail");
+  }
+  else if(!generalNotification && !validatePhoneNumber(phoneField)){
+    showErrorAlert("errorPhone");
+  }
+
+  const inputs = document.querySelectorAll('#fname, #email, #phone' );
 
   inputs.forEach(input => {
     input.value = '';
@@ -40,6 +45,12 @@ function validateEmail(mail){
     }
       console.log("You have entered an invalid email address!");
       return false;
+}
+
+function validatePhoneNumber(phone) {
+  var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+
+  return re.test(phone);
 }
 
 function showErrorAlert(id){
