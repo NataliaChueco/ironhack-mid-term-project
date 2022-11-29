@@ -63,7 +63,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon`)
 
 
         //Substituting the elements from the DOM
-        document.getElementById("image").style.backgroundImage=`url(/ironhack-mid-term-project/assets/projects-section/${data.results[urlParams.get('pokemon')*3].name}.jpg)`; 
+        document.getElementById("image").style.backgroundImage=`url(../../../assets/projects-section/${data.results[urlParams.get('pokemon')*3].name}.jpg)`; 
 
         let HTMLTitle = document.getElementById(`title`);
         HTMLTitle.innerHTML = title;
