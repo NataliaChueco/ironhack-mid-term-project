@@ -1,6 +1,6 @@
 .clients__container{
     background-color: $text-color;
-    background-image: url(/assets/testimonial-section/orbit.png);
+    background-image: url("../../assets/testimonial-section/orbit.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -51,7 +51,7 @@
     align-items: center;
 
     &__cropper{
-        background-image: url(/ironhack-mid-term-project/assets/testimonial-section/profile.png);
+        background-image: url("../../assets/testimonial-section/profile.png");
         border-radius: 50%;
         background-size: cover;
         background-position: center;
